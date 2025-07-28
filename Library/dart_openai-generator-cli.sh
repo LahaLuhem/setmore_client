@@ -36,7 +36,7 @@ rm -f pubspec.lock
 
 # Execute openapi-generator generator
 openapi-generator generate                                                                                              \
-        -i https://petstore3.swagger.io/api/v${api_version_tag}/openapi.json                                            \
+        -i Library/swagger.yaml                                                                                         \
         -g dart-dio                                                                                                     \
         -o .                                                                                                            \
         --additional-properties pubName="${client_library_name}"                                                        \
@@ -46,7 +46,7 @@ openapi-generator generate                                                      
         --additional-properties pubAuthorEmail="$(git config --local user.email)"                                       \
         --additional-properties pubHomepage="https://github.com/$(git config --local user.name)/${client_library_name}" \
         --additional-properties pubPublishTo="https://pub.dev"                                                                  \
-        --additional-properties pubDescription="Petstore OpenAPI API client"                                            \
+        --additional-properties pubDescription="Setmore OpenAPI client"                                                 \
         --additional-properties serializationLibrary="json_serializable"
 # Cleanup
 dart pub global deactivate openapi_generator_cli
