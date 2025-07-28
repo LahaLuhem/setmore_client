@@ -1,0 +1,17 @@
+# Custom
+Example/**
+Library/**
+.idea/**
+.run/**
+test/**
+.openapi-generator/**
+.openapi-generator**
+
+# Files and directories created by pub
+.dart_tool/
+.buildlog
+.packages
+.project
+.pub/
+build/
+**/packages/

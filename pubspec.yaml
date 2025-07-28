@@ -2,7 +2,7 @@ name: setmore_client
 version: 1.0.0
 description: Setmore OpenAPI client
 homepage: https://github.com/LahaLuhem/setmore_client
-publish_to: https://pub.dev
+publish_to:
 
 
 environment:
